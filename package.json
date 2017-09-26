@@ -5,7 +5,6 @@
   "main": "src/main.js",
   "scripts": {
     "start": "webpack -p --config webpack/production.js",
-    // "start": "webpack-dev-server --inline --progress --colors --history-api-fallback --config webpack/development.js",
     "dist": "webpack -p --config webpack/production.js",
     "lint": "eslint src",
     "test": "mocha --compilers js:babel-core/register --require test/index.js --recursive",
@@ -49,6 +48,7 @@
     "imports-loader": "^0.6.5",
     "json-loader": "^0.5.4",
     "lodash": "^4.6.1",
+    "node": "^8.3.0",
     "node-sass": "^3.4.2",
     "raw-loader": "^0.5.1",
     "react": "^0.14.3",
@@ -68,6 +68,10 @@
     "webpack": "^1.12.8"
   },
   "babel": {
-    "presets": ["es2015", "react", "stage-2"]
+    "presets": [
+      "es2015",
+      "react",
+      "stage-2"
+    ]
   }
 }
