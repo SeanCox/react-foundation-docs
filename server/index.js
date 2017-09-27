@@ -1,9 +1,11 @@
 const express = require('express')
 const app = express()
 
-app.get('/', function(req, res) {
-  res.send('Hello World!')
-})
+// app.get('/', function(req, res) {
+//   res.send('Hello World!')
+// })
+
+app.use('/static', express.static('dist'))
 
 const port = process.env.PORT || 8080
 
