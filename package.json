@@ -4,8 +4,8 @@
   "description": "Documentation for React + Foundation",
   "main": "src/main.js",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress --colors --history-api-fallback --config webpack/development.js",
-    "heroku-postbuild": "webpack -p --config webpack/production.js",
+    "dev": "webpack-dev-server --inline --progress --colors --history-api-fallback --config webpack/development.js",
+    "start": "webpack -p --config webpack/production.js",
     "lint": "eslint src",
     "test": "mocha --compilers js:babel-core/register --require test/index.js --recursive",
     "test:watch": "npm run test -- --watch"
