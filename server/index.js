@@ -5,7 +5,7 @@ const app = express()
 //   res.send('Hello World!')
 // })
 
-app.use('/static', express.static('dist'))
+app.use('/', express.static('./dist'))
 
 const port = process.env.PORT || 8080
 
